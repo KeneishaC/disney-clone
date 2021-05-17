@@ -20,6 +20,7 @@ const NavMenu = styled.div `
     flex: 1;
     margin-left: 25px;
     align-items: center;
+    overflow-x: hidden;
 
     a {
         display: flex;
