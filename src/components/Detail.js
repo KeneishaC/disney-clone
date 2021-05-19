@@ -27,6 +27,7 @@ const ImageTitle = styled.div `
     min-height: 170px;
     width: 35vw;
     min-width: 200px;
+    margin-top: 60px;
 
     img{
         width: 100%;
@@ -81,7 +82,6 @@ const AddButton = styled.div`
         color: white;
     }
 `
-
 const GroupWatchButton = styled(AddButton) `
     background: rgb(0, 0, 0);
 `
