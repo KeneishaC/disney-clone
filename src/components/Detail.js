@@ -126,10 +126,11 @@ function Detail() {
                 </GroupWatchButton>
             </Controls>
             <Subtitle>
-                2018 ￮ 7m ￮ Family, Fantasy, Kids, Animation
+                2018 • 7m • Family, Fantasy, Kids, Animation
             </Subtitle>
             <Description>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius, iure veritatis vero quibusdam similique, possimus cupiditate temporibus commodi vel tenetur blanditiis nobis molestias ad dolorem magnam ex! Quae, sequi.
+                A Chinese mom who’s sad when her grown son leaves home gets another chance at motherhood when one of her dumplings springs to life. 
+                But she finds that nothing stays cute and small forever.
             </Description>
         </Container>
     )
