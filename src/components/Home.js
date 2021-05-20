@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState} from 'react'
 import styled from 'styled-components'
 import ImageSlider from './ImageSlider'
 import  Viewers from './Viewers'
 import Movies from './Movies'
+import db from '../firebase'
+
 
 const Container = styled.main `
     min-height: calc(100vh - 70px);
@@ -24,6 +26,16 @@ const Container = styled.main `
 `
 
 function Home() {
+    useEffect(() => {
+       db.collection("movies").onSnapshot((snapshot) => {
+            let tempMoves = snapshot.docs.map((doc) => {
+                
+                return{ id: doc.id, ...doc.data }
+            })
+            console.log(tempMoves)
+       })
+    }, [])
+
     return (
         <Container>
             <ImageSlider />
