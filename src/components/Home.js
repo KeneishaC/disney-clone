@@ -34,7 +34,7 @@ function Home() {
        db.collection("movies").onSnapshot((snapshot) => {
             let tempMovies = snapshot.docs.map((doc) => {
                 
-                return{ id: doc.id, ...doc.data }
+                return{ id: doc.id, ...doc.data() }
             })
             dispatch(setMovies(tempMovies))
        })
