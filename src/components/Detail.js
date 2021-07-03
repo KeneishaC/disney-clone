@@ -128,25 +128,25 @@ function Detail() {
     return (
         <Container>
             <Background>
-                <img src={movie.backgroundImg} />
+                <img alt={movie.title} src={movie.backgroundImg} />
             </Background>
             <ImageTitle>
-                <img src={movie.titleImg} />
+                <img alt={movie.titile} src={movie.titleImg} />
             </ImageTitle>
             <Controls>
                 <PlayButton>
-                    <img src="/images/play-icon-black.png" />
+                    <img alt="" src="/images/play-icon-black.png" />
                     <span>PLAY</span>
                 </PlayButton>
                 <TrailerButton>
-                    <img src="/images/play-icon-white.png"/>
+                    <img alt="" src="/images/play-icon-white.png"/>
                     <span>Trailer</span>
                 </TrailerButton>
                 <AddButton>
                     <span>+</span>
                 </AddButton>
                 <GroupWatchButton>
-                    <img src="/images/group-icon.png" />
+                    <img alt="" src="/images/group-icon.png" />
                 </GroupWatchButton>
             </Controls>
             <Subtitle>
